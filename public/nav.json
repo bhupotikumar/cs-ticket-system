@@ -1,0 +1,48 @@
+{
+    "logo": {
+        "id": 1,
+        "text": "CS -Ticket System",
+        "url": "/"
+    },
+    "links": [
+        {
+            "id": 2,
+            "label": "Home",
+            "path": "/"
+        },
+        {
+            "id": 3,
+            "label": "FAQ",
+            "path": "/faq"
+        },
+        {
+            "id": 4,
+            "label": "Changelog",
+            "path": "/changelog"
+        },
+        {
+            "id": 5,
+            "label": "Blog",
+            "path": "/blog"
+        },
+        {
+            "id": 6,
+            "label": "Download",
+            "path": "/download"
+        },
+        {
+            "id": 7,
+            "label": "Contact",
+            "path": "/contact"
+        }
+    ],
+    "actions": [
+        {
+            "id": 8,
+            "label": "+ New Ticket",
+            "path": "/new-ticket",
+            "type": "button",
+            "variant": "primary"
+        }
+    ]
+}
