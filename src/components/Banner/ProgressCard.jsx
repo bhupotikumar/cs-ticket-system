@@ -1,6 +1,6 @@
 import vector1 from '../../assets/vector1.png';
 
-const ProgressCard = () => {
+const ProgressCard = ({ progressCounter, setProgressCounter }) => {
     return (
         <div className="w-full bg-linear-to-br from-violet-600 to-purple-500 rounded-lg border">
             <div
@@ -22,7 +22,7 @@ const ProgressCard = () => {
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
                         <h1 className='mb-4 text-xl md:text-2xl font-semibold md:font-bold text-gray-100'>In-Progress</h1>
-                        <h1 className="text-3xl md:text-6xl font-semibold">0</h1>
+                        <h1 className="text-3xl md:text-6xl font-semibold">{progressCounter}</h1>
                     </div>
                 </div>
             </div>

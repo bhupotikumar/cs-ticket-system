@@ -1,18 +1,19 @@
-import React from 'react';
 import { FaCalendarWeek } from 'react-icons/fa';
 
-const TicketCard = ({ ticket }) => {
+const TicketCard = ({ ticket, onClick }) => {
     const { id, title, description, createdAt, customer, priority, status } = ticket;
 
     return (
-        <div className="card bg-gray-100 w-full mx-auto shadow-sm">
+        <div
+            onClick={() => onClick(ticket)}
+            className="card bg-gray-100 w-full mx-auto shadow-sm">
             <div className="card-body text-gray-600">
                 <h2 className="card-title justify-between text-gray-700">
                     {title}
                     <div className="badge badge-secondary">{status}</div>
                 </h2>
                 <p>{description}</p>
-                <div className="card-actions justify-between">
+                <div className="card-actions justify-between flex-wrap">
                     <div className="flex justify-start gap-2 items-center">
                         <p>#{id}</p>
                         {priority === "High" ?
