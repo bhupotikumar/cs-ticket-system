@@ -4,6 +4,7 @@ import TaskStatus from '../../components/TaskStatus/TaskStatus';
 import ResolvedTask from '../../components/ResolvedTask/ResolvedTask';
 import { Suspense, useState } from 'react';
 import Loading from '../../components/Loading/Loading';
+import { toast } from 'react-toastify';
 
 const Home = () => {
     const [tickets, setTickets] = useState([]);
@@ -17,6 +18,7 @@ const Home = () => {
             setTickets(prev => prev.filter(t => t.id !== ticket.id));
             setProgressCounter(progressCounter + 1);
             setTaskStatus([...taskStatus, ticket]);
+            toast.success("Moved to Task Status");
         }
     };
     const handleComplete = (ticket) => {
@@ -24,6 +26,7 @@ const Home = () => {
         setProgressCounter(progressCounter - 1);
         setResolvedCounter(resolvedCounter + 1);
         setResolvedTask(prev => [...prev, ticket]);
+        toast.success("The Problen solved and moved to Resolved Task");
     };
 
     return (
