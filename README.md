@@ -1,16 +1,31 @@
-# React + Vite
+## CS - Ticket System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. What is JSX, and why is it used?
+```bash
+JSX (JavaScript XML) is a syntax used in React that allows developers to write HTML-like code inside JavaScript.
+We use it. Because It makes UI code easier, more readable and Powerful Dynamic Rendering.
+JSX helps create reusable components also.
+```
 
-Currently, two official plugins are available:
+2. What is the difference between State and Props?
+```bash
+ Props are read-only data passed from a parent component to a child component, while State is mutable data managed within a component that controls its behavior and rendering.
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. What is the useState hook, and how does it work?
+```bash
+useState is a React Hook that allows functional components to create and manage state. It returns a state variable and a function to update that state. When the state changes, React automatically re-renders the component.
+```
 
-## React Compiler
+4. How can you share state between components in React?
+```bash
+The most common way is lifting state up to a parent component, then passing it down as props
+Siblings cannot directly share state.
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+5. How is event handling done in React?
+```bash
+In React, event handling is done by passing function references to camelCase props like onClick, onChange, etc. Event handlers can access the synthetic event object, and React automatically re-renders the component when state changes inside the handler.
+Such as onClick={handleClick} binds the button click to the handleClick function.
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
