@@ -42,7 +42,7 @@ const Home = () => {
                             handleTicket={handleTicket}
                         />
                     </div>
-                    <aside className='col-span-2 lg:col-span-1 md:flex md:justify-between md:items-center lg:block'>
+                    <aside className='w-full gap-4 col-span-2 lg:col-span-1 md:flex md:justify-between lg:block'>
                         <TaskStatus
                             handleComplete={handleComplete}
                             taskStatus={taskStatus}

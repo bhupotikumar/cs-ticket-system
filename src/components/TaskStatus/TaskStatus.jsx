@@ -3,7 +3,7 @@ import React from 'react';
 const TaskStatus = ({ taskStatus, handleComplete }) => {
 
     return (
-        <div className='text-center md:text-left'>
+        <div className='text-center md:text-left w-full'>
             <h1 className='text-2xl font-semibold text-gray-700'>Task Status</h1>
             {taskStatus.length === 0 ?
                 <p className='text-gray-700'>Select a ticket to add to Task Status.</p> :
