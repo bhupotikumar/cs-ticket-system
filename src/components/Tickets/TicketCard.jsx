@@ -10,7 +10,7 @@ const TicketCard = ({ ticket, onClick }) => {
             <div className="card-body text-gray-600">
                 <h2 className="card-title justify-between text-gray-700">
                     {title}
-                    <div className="badge badge-secondary">{status}</div>
+                    <div className="badge text-green-600 bg-green-300 border-none"><span className='bg-green-600 w-3 h-3 rounded-full'></span>{status}</div>
                 </h2>
                 <p>{description}</p>
                 <div className="card-actions justify-between flex-wrap">
