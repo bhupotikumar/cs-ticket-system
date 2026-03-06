@@ -1,20 +1,18 @@
-import { Suspense, use } from 'react';
+import { Suspense, useEffect } from 'react';
 import TicketCard from './TicketCard';
 import Loading from '../Loading/Loading';
 
-const ticketPromise = fetch('./tickets.json')
-    .then(res => res.json());
+const Tickets = ({ handleTicket, tickets, setTickets }) => {
 
+    useEffect(() => {
+        const fetchTickets = async () => {
+            const res = await fetch('./tickets.json');
+            const data = await res.json();
+            setTickets(data);
+        };
+        fetchTickets();
+    }, [setTickets]);
 
-const Tickets = ({ taskStatus, setTaskStatus, progressCounter, setProgressCounter }) => {
-    const tickets = use(ticketPromise);
-
-    const handleTicket = (ticket) => {
-        if (!taskStatus.some(t => t.id === ticket.id)) {
-            setProgressCounter(progressCounter + 1);
-            setTaskStatus([...taskStatus, ticket]);
-        }
-    };
 
     return (
         <div>

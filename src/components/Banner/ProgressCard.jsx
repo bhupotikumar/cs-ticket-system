@@ -1,6 +1,6 @@
 import vector1 from '../../assets/vector1.png';
 
-const ProgressCard = ({ progressCounter, setProgressCounter }) => {
+const ProgressCard = ({ progressCounter }) => {
     return (
         <div className="w-full bg-linear-to-br from-violet-600 to-purple-500 rounded-lg border">
             <div

@@ -1,6 +1,6 @@
 import vector1 from '../../assets/vector1.png';
 
-const ResolvedCard = () => {
+const ResolvedCard = ({ resolvedCounter }) => {
     return (
         <div className="w-full bg-linear-to-br from-green-500 to-green-900 rounded-lg">
             <div
@@ -22,7 +22,7 @@ const ResolvedCard = () => {
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
                         <h1 className='mb-4 text-xl md:text-2xl font-semibold md:font-bold text-gray-100'>Resolved</h1>
-                        <h1 className="text-3xl md:text-6xl font-semibold">0</h1>
+                        <h1 className="text-3xl md:text-6xl font-semibold">{resolvedCounter}</h1>
                     </div>
                 </div>
             </div>
