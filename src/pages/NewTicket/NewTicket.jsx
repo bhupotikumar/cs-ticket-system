@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import Loading from '../../components/Loading/Loading';
+import ComingSoon from '../../components/ComingSoon/ComingSoon';
 
 const NewTicket = () => {
     return (
-        <div>
-            <h1>Welcome to new ticket Page.</h1>
-        </div>
+        <Suspense fallback={<Loading />}>
+            <ComingSoon title="New Ticket Page" description="Our this feature is coming soon with exciting posts!" />
+        </Suspense>
     );
 };
 

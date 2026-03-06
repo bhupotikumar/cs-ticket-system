@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import Loading from '../../components/Loading/Loading';
+import ComingSoon from '../../components/ComingSoon/ComingSoon';
 
 const Faq = () => {
     return (
-        <div>
-            <h1>Welcome to FAQ Page</h1>
-        </div>
+        <Suspense fallback={<Loading />}>
+            <ComingSoon title="FAQ Page" description="Our FAQs is coming soon with exciting posts!" />
+        </Suspense>
     );
 };
 

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import Loading from '../../components/Loading/Loading';
+import ComingSoon from '../../components/ComingSoon/ComingSoon';
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Welcome to Contact Page.</h1>
-        </div>
+        <Suspense fallback={<Loading />}>
+            <ComingSoon title="Contact Page" description="Our contacts is coming soon with exciting posts!" />
+        </Suspense>
     );
 };
 

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import ComingSoon from '../../components/ComingSoon/ComingSoon';
+import Loading from '../../components/Loading/Loading';
 
 const Changelog = () => {
     return (
-        <div>
-            <h1>Welcome to Changelog Page.</h1>
-        </div>
+        <Suspense fallback={<Loading />}>
+            <ComingSoon title="Changelog Page" description="Our changelog is coming soon with exciting posts!" />
+        </Suspense>
     );
 };
 
