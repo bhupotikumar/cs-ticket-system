@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1021,
+        "title": "Login Issue",
+        "description": "User unable to login even after entering correct email and password. The system shows an authentication error and prevents access to the dashboard.",
+        "customer": "John Smith",
+        "priority": "High",
+        "status": "open",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 1022,
+        "title": "Payment Failed",
+        "description": "Customer reports that payment fails during checkout. Transaction loads for a long time and then returns an unsuccessful payment message.",
+        "customer": "Emma Wilson",
+        "priority": "Low",
+        "status": "open",
+        "createdAt": "2026-03-01"
+    },
+    {
+        "id": 1023,
+        "title": "Password Reset Problem",
+        "description": "User requested a password reset but the reset email has not been received. Customer checked spam folder but still cannot find the email.",
+        "customer": "Michael Brown",
+        "priority": "Medium",
+        "status": "open",
+        "createdAt": "2026-03-02"
+    },
+    {
+        "id": 1024,
+        "title": "Profile Update Error",
+        "description": "Customer unable to update profile details such as phone number and address. After saving changes, the system reloads but information remains unchanged.",
+        "customer": "Sophia Davis",
+        "priority": "Low",
+        "status": "open",
+        "createdAt": "2026-03-02"
+    },
+    {
+        "id": 1025,
+        "title": "Dashboard Not Loading",
+        "description": "After login, the dashboard page keeps loading and never fully appears. User sees a loading spinner but no data or interface elements are displayed.",
+        "customer": "James Miller",
+        "priority": "High",
+        "status": "open",
+        "createdAt": "2026-03-02"
+    },
+    {
+        "id": 1026,
+        "title": "Email Notification Missing",
+        "description": "User is not receiving important system email notifications such as ticket updates and account alerts even though notifications are enabled.",
+        "customer": "Olivia Martinez",
+        "priority": "Medium",
+        "status": "open",
+        "createdAt": "2026-03-03"
+    },
+    {
+        "id": 1027,
+        "title": "File Upload Error",
+        "description": "Customer tries to upload files through the support form but the upload fails repeatedly. The system displays an unknown error message.",
+        "customer": "William Anderson",
+        "priority": "Medium",
+        "status": "open",
+        "createdAt": "2026-03-03"
+    },
+    {
+        "id": 1028,
+        "title": "Slow Page Response",
+        "description": "Several pages inside the application take unusually long to load. Users report delays when navigating between dashboard sections.",
+        "customer": "Ava Thomas",
+        "priority": "Low",
+        "status": "open",
+        "createdAt": "2026-03-03"
+    },
+    {
+        "id": 1029,
+        "title": "Account Suspension",
+        "description": "Customer account appears to be suspended automatically without warning. User cannot access services and requests clarification and restoration.",
+        "customer": "Benjamin Taylor",
+        "priority": "High",
+        "status": "open",
+        "createdAt": "2026-03-04"
+    },
+    {
+        "id": 1030,
+        "title": "Search Function Not Working",
+        "description": "The search bar does not return results when users search for existing items or tickets. It always shows an empty result page.",
+        "customer": "Isabella Moore",
+        "priority": "Medium",
+        "status": "open",
+        "createdAt": "2026-03-04"
+    },
+    {
+        "id": 1031,
+        "title": "Incorrect Billing Amount",
+        "description": "Customer noticed that the billing amount charged on the invoice is higher than expected. The payment summary does not match the selected plan.",
+        "customer": "Lucas Jackson",
+        "priority": "High",
+        "status": "open",
+        "createdAt": "2026-03-04"
+    },
+    {
+        "id": 1032,
+        "title": "App Crash on Mobile",
+        "description": "Application crashes when the user tries to open it on certain Android devices. The app closes immediately after the splash screen.",
+        "customer": "Mia White",
+        "priority": "High",
+        "status": "open",
+        "createdAt": "2026-03-05"
+    },
+    {
+        "id": 1033,
+        "title": "Notification Delay",
+        "description": "Push notifications for updates and messages are arriving much later than expected. Some alerts appear hours after the event occurred.",
+        "customer": "Henry Harris",
+        "priority": "Low",
+        "status": "open",
+        "createdAt": "2026-03-05"
+    },
+    {
+        "id": 1034,
+        "title": "Language Settings Bug",
+        "description": "Users report that language preferences reset automatically after refreshing the page. Selected language does not stay saved in settings.",
+        "customer": "Charlotte Clark",
+        "priority": "Medium",
+        "status": "open",
+        "createdAt": "2026-03-05"
+    },
+    {
+        "id": 1035,
+        "title": "Two Factor Auth Issue",
+        "description": "Customer cannot complete login because the two-factor authentication code does not work even when entered immediately after receiving it.",
+        "customer": "Daniel Lewis",
+        "priority": "High",
+        "status": "open",
+        "createdAt": "2026-03-06"
+    }
+]

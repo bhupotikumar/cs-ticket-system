@@ -1,22 +1,27 @@
 import React from 'react';
+import { FaCalendarWeek } from 'react-icons/fa';
 
-const TicketCard = () => {
+const TicketCard = ({ ticket }) => {
+    const { id, title, description, createdAt, customer, priority, status } = ticket;
+
     return (
-        <div className="card bg-gray-100 w-96 shadow-sm">
-            <div className="card-body">
-                <h2 className="card-title justify-between">
-                    Card Title
-                    <div className="badge badge-secondary">NEW</div>
+        <div className="card bg-gray-100 w-full mx-auto shadow-sm">
+            <div className="card-body text-gray-600">
+                <h2 className="card-title justify-between text-gray-700">
+                    {title}
+                    <div className="badge badge-secondary">{status}</div>
                 </h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <p>{description}</p>
                 <div className="card-actions justify-between">
                     <div className="flex justify-start gap-2 items-center">
-                        <p>id</p>
-                        <span>priority</span>
+                        <p>#{id}</p>
+                        {priority === "High" ?
+                            <span className='text-red-600'>{priority} Priority</span> : priority === "Medium" ?
+                                <span className='text-yellow-600'>{priority} Priority</span> : <span className='text-green-600'>{priority} Priority</span>}
                     </div>
                     <div className="flex gap-2 justify-end items-center">
-                        <p>name</p>
-                        <span>date</span>
+                        <p>{customer}</p>
+                        <span className='flex items-center gap-2'><FaCalendarWeek />{createdAt}</span>
                     </div>
                 </div>
             </div>

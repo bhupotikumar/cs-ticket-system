@@ -1,6 +1,5 @@
-import React from 'react';
 import { FaMailBulk } from 'react-icons/fa';
-import { FaFacebook, FaFacebookF, FaLinkedin, FaSquareFacebook, FaXTwitter } from 'react-icons/fa6';
+import { FaFacebookF, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
