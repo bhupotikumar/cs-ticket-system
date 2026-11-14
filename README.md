@@ -45,9 +45,9 @@ CS - Ticket System is a high-performance, lightweight tool designed to streamlin
 
 List the primary technologies, frameworks, or libraries powering this project:
 
-* **Core:** JavaScript
+* **Core:** JavaScript, React
 * **Styling/UI:** CSS and Tailwind
-<!-- * **Tools:** [e.g., Vite, Docker, GitHub Actions] -->
+* **Tools:** Vite, GitHub Actions
 
 ---
 
